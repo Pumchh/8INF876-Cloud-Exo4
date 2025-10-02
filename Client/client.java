@@ -7,7 +7,7 @@ public class client {
         String page = "";
         int port = 80;
         
-        System.out.println("Choose a website (Example: example.com/path): ");
+        System.out.println("Choose a website (Example: website.com/path): ");
         try (BufferedReader consoleReader = new BufferedReader(new InputStreamReader(System.in))) {
             website = consoleReader.readLine();
         } catch (IOException e) {
