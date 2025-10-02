@@ -3,11 +3,13 @@ Création d'un serveur et d'un client HTTP
 
 ## Client HTTP
 
-Pour utiliser le client http, il suffit de le lancer pour avoir accès au html de la page demandée.
-Il est nécessaire d'entrer la page sous la forme website.com/path
+Le client HTTP est écris en Java.
+Il permet d'envoyer une requête GET à un site et d'afficher la réponse dans la console.
+Il suffit de lancer le client pour avoir accès au html de la page demandée en entrant la page souhaitée sous la forme website.com/path
 
 ## Serveur HTTP
 
-Pour utiliser le serveur HTTP, il faut le lancer. Ensuite il est accessible sur l'adresse localhost (ou 127.0.0.1) sur le port 80.
+Le serveur HTTP est écris en Java.
+Pour l'utiliser, il faut lancer le serveur qui sera accessible sur l'adresse localhost (ou 127.0.0.1) sur le port 80.
 
-Il contient une page index.html qui est chargée par défaut, et contient une page 404.html qui est chargée lors d'une demande vers une page inconnue.
+Le serveur contient une page index.html qui s'affiche par défaut, ainsi qu'une page 404.html qui est renvoyée lorsque la page demandée n'existe pas.
