@@ -1,15 +1,34 @@
 # 8INF876-Cloud-Exo4
-Création d'un serveur et d'un client HTTP
 
-## Client HTTP
+Projet réalisé dans le cadre du cours **8INF876 – Conception et architecture des systèmes d’infonuagique (UQAC)**.  
+L’objectif est d’implémenter une version simplifiée du **protocole HTTP** (client et serveur) en Java, via des **sockets TCP**.
 
-Le client HTTP est écris en Java.
-Il permet d'envoyer une requête GET à un site et d'afficher la réponse dans la console.
-Il suffit de lancer le client pour avoir accès au html de la page demandée en entrant la page souhaitée sous la forme website.com/path
+## 📝 Description
 
-## Serveur HTTP
+Le projet comprend deux programmes :
 
-Le serveur HTTP est écris en Java.
-Pour l'utiliser, il faut lancer le serveur qui sera accessible sur l'adresse localhost (ou 127.0.0.1) sur le port 80.
+- **Client HTTP** :  
+  Se connecte à un serveur web (local ou distant), envoie une requête `GET` conforme à la RFC 2616,  
+  puis affiche ou sauvegarde la réponse HTML reçue (par ex. `index.html`).
 
-Le serveur contient une page index.html qui s'affiche par défaut, ainsi qu'une page 404.html qui est renvoyée lorsque la page demandée n'existe pas.
+- **Serveur HTTP** :  
+  Écoute sur le port 80, reçoit des requêtes HTTP et renvoie :
+  - Le fichier demandé (ex. `index.html`) avec le code **200 OK**  
+  - Un message d’erreur avec le code **404** si le fichier n’existe pas.
+
+Ces programmes permettent de **simuler la communication HTTP** entre un client et un serveur sans utiliser de frameworks externes.
+
+## 💡 À savoir
+
+Communication via **Socket TCP**.
+
+Respect du format des requêtes et réponses HTTP selon la **RFC 2616**.
+
+Réponses du type :
+- `HTTP/1.0 200 OK` → fichier trouvé
+- `HTTP/1.0 404 File Not Found` → fichier manquant
+
+## 🧰 Technologies utilisées
+- Langage : Java  
+- Communication : Sockets TCP  
+- Protocole : HTTP/1.0 (RFC 2616)
