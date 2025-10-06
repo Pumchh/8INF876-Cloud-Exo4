@@ -32,3 +32,4 @@ Réponses du type :
 - Langage : Java  
 - Communication : Sockets TCP  
 - Protocole : HTTP/1.0 (RFC 2616)
+
